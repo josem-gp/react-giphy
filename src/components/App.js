@@ -9,9 +9,7 @@ const App = () => {
   const [selectedId, setSelectedId] = useState('SRO0ZwmImic0');
 
   const clickSelectId = newId => {
-    console.log(newId);
     setSelectedId(newId);
-    console.log(setSelectedId);
   };
 
   return (
