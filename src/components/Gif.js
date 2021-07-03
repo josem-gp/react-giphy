@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gif = ({ id, clickSelectId }) => {
   const handleClick = () => {
-    clickSelectId({ id });
+    clickSelectId(id);
   };
 
   return (
