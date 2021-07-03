@@ -19,7 +19,7 @@ const App = () => {
         <Gif id={selectedId} />
       </div>
       <div className="right-scene">
-        <GifList ids={gifIds} changeSelectedGif={clickSelectId} />
+        <GifList ids={gifIds} clickSelectId={clickSelectId} />
       </div>
     </div>
   );

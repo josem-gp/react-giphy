@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Gif = ({ id, changeSelectedGif }) => {
+const Gif = ({ id, clickSelectId }) => {
   const handleClick = () => {
-    changeSelectedGif({ id });
+    clickSelectId({ id });
   };
 
   return (
