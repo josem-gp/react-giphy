@@ -5,7 +5,7 @@ import GifList from './GifList';
 
 const App = () => {
   // const gifIds = ['av8xY7zDIP5qsKAgPN', 'YPz7GHPHR9tAQ5GoDJ'];
-  const [gifIds, setGifIds] = useState(Array(10).fill(null));
+  const [gifIds, setGifIds] = useState([]);
   const [selectedId, setSelectedId] = useState('SRO0ZwmImic0');
 
   const clickSelectId = newId => {
@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div>
       <div className="left-scene">
-        <SearchBar changeGifIds />
+        <SearchBar changeGifIds={changeGifIds} />
         <Gif id={selectedId} />
       </div>
       <div className="right-scene">
